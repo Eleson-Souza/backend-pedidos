@@ -2,10 +2,10 @@
 const Sequelize = require('sequelize');
 
 // Obtem dados de conexão entre sequelize e banco de dados MySQL
-const sequelize = require('../database/database.js');
+const connection = require('../database/database.js');
 
 // Cria tabela no BD e seus campos
-const Cliente = sequelize.define("cliente", {
+const Cliente = connection.define("cliente", {
     id: {
         allowNull: false,
         autoIncrement: true,
